@@ -1,17 +1,40 @@
 # Data path. adjust them!
 common:
-    image_path:  "/home/ycj/data/calib/image/old"
-    pcd_path:  "/home/ycj/data/calib/pcd/old"
-    result_path:  "/home/ycj/data/calib/extrinsic.txt"
-    data_num: 3
+  image_path: "/home/gisen/pcd/pantory/pic"
+  pcd_path: "/home/gisen/pcd/pantory/pid"
+  result_path: "/home/gisen/pcd/pantory/result/result2.txt"
+  data_num: 3
+
+# common:
+#   image_path: "/home/gisen/pcd/pantory/pic"
+#   pcd_path: "/home/gisen/pcd/pantory/pid"
+#   result_path: "/home/gisen/pcd/pantory/result/result2.txt"
+#   data_num: 3
+
 # Camera Parameters. Adjust them!
 camera:
-    camera_matrix: [1704.1857 , 0.0,      886.5115,
-                    0.0,     1719.5228,  467.9244,
-                    0.0,     0.0,      1.0     ]
-    dist_coeffs: [-0.0963, 0.0708, 0.0011, -0.0017, 0.000000]
+  camera_matrix:
+    [
+      233.3038252725968,
+      0,
+      367.5536677304368,
+      0,
+      233.0751416669911,
+      367.0886110159834,
+      0,
+      0,
+      1,
+    ]
+  dist_coeffs:
+    [
+      -0.02736829209441808,
+      0.01676332235440696,
+      -0.0138297037587819,
+      0.003084867513649774,
+      0.0,
+    ]
 
 # Calibration Parameters.!
 calib:
-    calib_config_file: "/home/ycj/catkin_ws/src/livox_camera_calib/config/config_outdoor.yaml"
-    use_rough_calib: true # set true if your initial_extrinsic is bad
+  calib_config_file: "/home/gisen/ros/src/livox_camera_calib/config/config_indoor.yaml"
+  use_rough_calib: true # set true if your initial_extrinsic is bad
